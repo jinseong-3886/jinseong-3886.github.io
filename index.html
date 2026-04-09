@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내 첫 홈페이지</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .box {
+      width: 500px;
+      max-width: 90%;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #222;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>안녕하세요</h1>
+    <p>이 페이지는 GitHub Pages로 만든 첫 홈페이지입니다.</p>
+    <button onclick="showMessage()">눌러보기</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("홈페이지가 정상적으로 동작합니다.");
+    }
+  </script>
+</body>
+</html>
