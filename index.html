@@ -3,61 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>내 첫 홈페이지</title>
+  <title>우리 팀 홈페이지</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f6f8;
-      text-align: center;
-      padding-top: 100px;
+      color: #222;
     }
 
-    .box {
-      width: 500px;
-      max-width: 90%;
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .section {
+      max-width: 1100px;
       margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .member-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .member-card {
+      width: 280px;
       background: white;
-      padding: 40px;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
     }
 
-    h1 {
+    .member-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .member-card h3 {
+      margin: 18px 0 8px 0;
+      font-size: 24px;
+    }
+
+    .role {
+      color: #666;
+      font-weight: bold;
       margin-bottom: 10px;
     }
 
-    p {
-      color: #555;
-      margin-bottom: 20px;
+    .desc {
+      font-size: 15px;
+      color: #444;
+      padding: 0 18px;
+      line-height: 1.6;
     }
 
-    button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 10px;
+    footer {
+      text-align: center;
+      padding: 25px 20px;
       background: #222;
       color: white;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      opacity: 0.9;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>안녕하세요</h1>
-    <p> 내 이름은 용준. 바보죠.</p>
-    <button onclick="showMessage()">눌러보기</button>
-  </div>
+  <header>
+    <h1>우리 팀 홈페이지</h1>
+    <p>팀원 소개 페이지</p>
+  </header>
 
-  <script>
-    function showMessage() {
-      alert("홈페이지가 정상적으로 동작합니다.");
-    }
-  </script>
+  <section class="section">
+    <h2>Members</h2>
+
+    <div class="member-list">
+      <div class="member-card">
+        <img src="member1.jpg" alt="member1">
+        <h3>홍길동</h3>
+        <div class="role">Team Leader</div>
+        <div class="desc">
+          프로젝트 총괄 및 발표를 담당합니다.
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="member2.jpg" alt="member2">
+        <h3>김철수</h3>
+        <div class="role">Developer</div>
+        <div class="desc">
+          홈페이지 구현과 기능 개발을 담당합니다.
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="member3.jpg" alt="member3">
+        <h3>이영희</h3>
+        <div class="role">Designer</div>
+        <div class="desc">
+          UI 구성과 디자인 작업을 담당합니다.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Team Homepage
+  </footer>
 </body>
 </html>
